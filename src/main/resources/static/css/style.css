@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: -20px;
+  background-color: #f9f9f9;
+}
+
+.app-header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+#search-input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.controls {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-btn {
+  background: #28a745;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px;
+}
+
+.employee-card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 350px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-buttons button {
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.search-input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Sidebar */
+#main-content {
+  display: flex;
+}
+
+#filter-sidebar {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  border-left: 1px solid #ccc;
+}
+
+#filter-sidebar.hidden {
+  display: none;
+}
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.form-container form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.form-container form button {
+  padding: 8px 14px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.form-container form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.form-container form button[type="button"] {
+  background-color: #ccc;
+  border: none;
+}
+
+
+.form-btn-container{
+  display: flex;
+  justify-content: flex-end;
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add/Edit Employee</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2 id="form-title">Add Employee</h2>
+    <form id="employee-form" autocomplete="on">
+      <input type="hidden" id="employee-id" name="employee-id" />
+
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" autocomplete="given-name" required />
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" autocomplete="family-name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required />
+
+      <label for="department">Department</label>
+      <input type="text" id="department" name="department" autocomplete="organization" required />
+
+      <label for="role">Role</label>
+      <input type="text" id="role" name="role" autocomplete="job-title" required />
+
+      <div class="form-btn-container">
+        <button type="button" id="cancel-btn" class="btn btn-secondary text-dark">Cancel</button>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
+      
+      
+    </form>
+  </div>
+
+  <script src="../static/js/app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 d-flex justify-content-between align-items-center">
+      <h3 class="navbar-brand text-light pl-2 p-3">Employee Directory</h3>
+
+      <label for="search-input" class="sr-only">Search Employees</label>
+      <input
+        type="text"
+        id="search-input"
+        name="search"
+        class="search-input form-control-sm mr-4"
+        placeholder="Search employees..."
+        autocomplete="off"
+      />
+
+      <button id="filter-toggle" class="btn btn-light btn-sm">Filter</button>
+    </nav>
+
+    <div class="sort-actions d-flex flex-row mb-3">
+      <div class="d-flex justify-content-start ml-3 align-items-center">
+        <label for="sort-select" class="mr-1">Sort:</label>
+        <select id="sort-select" name="sort" class="form-control form-control-sm">
+          <option value="default">--Select</option>
+          <option value="firstName">Name</option>
+          <option value="department">Department</option>
+          <option value="role">Role</option>
+        </select>
+      </div>
+
+      <div class="d-flex justify-content-start ml-3 align-items-center">
+        <label for="show-count" class="mr-1">Show</label>
+        <select id="show-count" name="show-count" class="form-control form-control-sm">
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+
+      <div class="d-flex justify-content-end align-items-end ml-auto mr-3">
+        <a href="add-edit-form.html">
+          <button id="add-employee-btn" class="btn btn-success btn-sm">Add Employee</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="main-content">
+      <div id="employee-list-container" class="card-grid row">
+        <!-- Employee cards will be dynamically inserted here -->
+      </div>
+
+      <aside id="filter-sidebar" class="hidden bg-light p-3 border rounded">
+        <h4>Filter Employees</h4>
+
+        <div class="form-group">
+          <label for="filter-firstname">First Name:</label>
+          <input type="text" id="filter-firstname" name="filter-firstname" class="form-control form-control-sm" />
+        </div>
+
+        <div class="form-group">
+          <label for="filter-department">Department:</label>
+          <input type="text" id="filter-department" name="filter-department" class="form-control form-control-sm" />
+        </div>
+
+        <div class="form-group">
+          <label for="filter-role">Role:</label>
+          <input type="text" id="filter-role" name="filter-role" class="form-control form-control-sm" />
+        </div>
+
+        <button id="apply-filter" class="btn btn-success btn-sm mr-2">Apply</button>
+        <button id="reset-filter" class="btn btn-secondary btn-sm">Reset</button>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-light text-center p-3 mt-4">
+    <p>© 2025 Employee Directory App. All rights reserved.</p>
+  </footer>
+
+  <script src="../static/js/data.js"></script>
+  <script src="../static/js/app.js"></script>
+</body>
+</html>
